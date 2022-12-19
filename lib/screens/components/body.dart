@@ -1,5 +1,9 @@
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:plant_app/constants.dart';
+import 'package:plant_app/screens/components/titleWithMoreBtn.dart';
 
 import 'header_with_searchbox.dart';
 
@@ -14,6 +18,10 @@ class Body extends StatelessWidget {
       child: Column(
         children: <Widget>[
           HeaderWithSearchBox(size: size),
+          TitleWithMoreBtn(
+            title: 'Recomended',
+            press: () {},
+          )
         ],
       ),
     );
