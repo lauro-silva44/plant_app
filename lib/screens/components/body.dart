@@ -3,7 +3,8 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:plant_app/constants.dart';
-import 'package:plant_app/screens/components/titleWithMoreBtn.dart';
+import 'package:plant_app/screens/components/recomended_plants.dart';
+import 'package:plant_app/screens/components/title_with_more_btn.dart';
 
 import 'header_with_searchbox.dart';
 
@@ -21,7 +22,8 @@ class Body extends StatelessWidget {
           TitleWithMoreBtn(
             title: 'Recomended',
             press: () {},
-          )
+          ),
+          RecomendedPlants()
         ],
       ),
     );
