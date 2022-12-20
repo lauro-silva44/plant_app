@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:plant_app/constants.dart';
+
+import 'components/image_and_icons.dart';
+import 'components/title_and_price.dart';
 
 class DetailsScreen extends StatelessWidget {
   const DetailsScreen({super.key});
@@ -7,35 +10,55 @@ class DetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Column(
-      children: [
-        Row(
+    return Material(
+      child: SingleChildScrollView(
+        child: Column(
           children: [
-            Expanded(
-                child: Column(children: [
-              IconButton(
-                icon: SvgPicture.asset('assets/icons/back_arrow.svg'),
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-              )
-            ])),
-            Container(
-              height: size.height * 0.8,
-              width: size.width * 0.75,
-              decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(63),
-                    bottomLeft: Radius.circular(63),
+            ImageAndIcon(size: size),
+            const TitleAndPrice(
+              title: 'Angelica',
+              country: 'Russia',
+              price: 440,
+            ),
+            const SizedBox(
+              height: kDefaultPadding,
+            ),
+            Row(
+              children: [
+                SizedBox(
+                  width: size.width / 2,
+                  height: 84,
+                  child: TextButton(
+                    onPressed: () {},
+                    style: flatButtonStyle,
+                    child: const Text(
+                      'Buy Now',
+                      style: TextStyle(color: Colors.white, fontSize: 16),
+                    ),
                   ),
-                  image: DecorationImage(
-                      fit: BoxFit.cover,
-                      alignment: Alignment.centerLeft,
-                      image: AssetImage('assets/images/img.png'))),
+                ),
+                Expanded(
+                    child: TextButton(
+                  onPressed: () {},
+                  child: const Text(
+                    'Description',
+                    style: TextStyle(color: Colors.black),
+                  ),
+                ))
+              ],
+            ),
+            const SizedBox(
+              height: kDefaultPadding * 2,
             )
           ],
-        )
-      ],
+        ),
+      ),
     );
   }
 }
+
+final ButtonStyle flatButtonStyle = TextButton.styleFrom(
+  backgroundColor: kPrimaryColor,
+  shape: const RoundedRectangleBorder(
+      borderRadius: BorderRadius.only(topRight: Radius.circular(20))),
+);

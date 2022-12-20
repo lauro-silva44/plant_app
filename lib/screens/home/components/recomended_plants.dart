@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
@@ -21,7 +20,7 @@ class RecomendedPlants extends StatelessWidget {
             price: 440,
             press: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => DetailsScreen()));
+                  MaterialPageRoute(builder: (context) => const DetailsScreen()));
             },
             image: 'assets/images/image_1.png',
           ),
@@ -31,7 +30,7 @@ class RecomendedPlants extends StatelessWidget {
             price: 440,
             press: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => DetailsScreen()));
+                  MaterialPageRoute(builder: (context) => const DetailsScreen()));
             },
             image: 'assets/images/image_2.png',
           ),
@@ -41,7 +40,7 @@ class RecomendedPlants extends StatelessWidget {
             price: 440,
             press: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => DetailsScreen()));
+                  MaterialPageRoute(builder: (context) => const DetailsScreen()));
             },
             image: 'assets/images/image_3.png',
           ),

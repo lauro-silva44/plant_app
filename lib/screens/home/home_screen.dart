@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:plant_app/constants.dart';
 import 'package:plant_app/screens/home/components/body.dart';
 
 import '../../components/my_bottom_navigation_bar.dart';
