@@ -3,14 +3,20 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:plant_app/constants.dart';
-import 'package:plant_app/screens/components/body.dart';
+import 'package:plant_app/screens/home/components/body.dart';
+
+import '../../components/my_bottom_navigation_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: builAppBar(), body: const Body());
+    return Scaffold(
+      appBar: builAppBar(),
+      body: const Body(),
+      bottomNavigationBar: const MyBottomNavigationBar(),
+    );
   }
 
   AppBar builAppBar() {

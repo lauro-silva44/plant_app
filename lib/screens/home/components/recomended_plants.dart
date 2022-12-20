@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
+import '../../../constants.dart';
+import '../../details/detail_screen.dart';
 
 class RecomendedPlants extends StatelessWidget {
   const RecomendedPlants({
@@ -18,21 +19,30 @@ class RecomendedPlants extends StatelessWidget {
             title: 'Samantha',
             country: 'Russia',
             price: 440,
-            press: () {},
+            press: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DetailsScreen()));
+            },
             image: 'assets/images/image_1.png',
           ),
           RecomendedPlantCard(
             title: 'Angelica',
             country: 'Russia',
             price: 440,
-            press: () {},
+            press: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DetailsScreen()));
+            },
             image: 'assets/images/image_2.png',
           ),
           RecomendedPlantCard(
             title: 'Samantha',
             country: 'Russia',
             price: 440,
-            press: () {},
+            press: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DetailsScreen()));
+            },
             image: 'assets/images/image_3.png',
           ),
         ],

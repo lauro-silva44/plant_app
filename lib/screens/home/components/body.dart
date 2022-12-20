@@ -3,8 +3,9 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:plant_app/constants.dart';
-import 'package:plant_app/screens/components/recomended_plants.dart';
-import 'package:plant_app/screens/components/title_with_more_btn.dart';
+import 'package:plant_app/screens/home/components/featured_plants.dart';
+import 'package:plant_app/screens/home/components/recomended_plants.dart';
+import 'package:plant_app/screens/home/components/title_with_more_btn.dart';
 
 import 'header_with_searchbox.dart';
 
@@ -23,7 +24,12 @@ class Body extends StatelessWidget {
             title: 'Recomended',
             press: () {},
           ),
-          RecomendedPlants()
+          const RecomendedPlants(),
+          TitleWithMoreBtn(title: 'Featured Plants', press: () {}),
+          const FeaturedPlants(),
+          const SizedBox(
+            height: kDefaultPadding,
+          )
         ],
       ),
     );
