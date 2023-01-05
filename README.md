@@ -1,16 +1,13 @@
-# plant_app
+# Plant App
 
-A new Flutter project.
+A little project just to pratice a bit of flutter
 
-## Getting Started
+## 🔗 Links
 
-This project is a starting point for a Flutter application.
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lauro-silva/)
 
-A few resources to get you started if this is your first Flutter project:
+### You can follow the tutorial in this link
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+[![youtube](assets/images/youtube.png)](https://www.youtube.com/watch?v=LN668OAUrK4)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Logo](assets/images/projet.png)

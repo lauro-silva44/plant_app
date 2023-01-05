@@ -10,16 +10,22 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: builAppBar(),
+      appBar: builAppBar(context),
       body: const Body(),
       bottomNavigationBar: const MyBottomNavigationBar(),
+      drawer: Drawer(
+          child: ListTile(
+        title: Text('Random Test'),
+      )),
     );
   }
 
-  AppBar builAppBar() {
+  AppBar builAppBar(BuildContext context) {
     return AppBar(
         elevation: 0,
-        leading: IconButton(
-            icon: SvgPicture.asset("assets/icons/menu.svg"), onPressed: () {}));
+        leading: Builder(
+            builder: (context) => IconButton(
+                icon: SvgPicture.asset("assets/icons/menu.svg"),
+                onPressed: () => Scaffold.of(context).openDrawer())));
   }
 }
